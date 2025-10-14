@@ -1,0 +1,109 @@
+body {
+    background-color: #edeff0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header__menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    border-bottom: 1px solid #D9DADB;
+}
+
+.menu__burger-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-right: 1px solid #D9DADB;
+}
+
+.menu__search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-column: span 2 / span 2;
+    margin-left: 25px;
+}
+
+.menu__subscribtion-ad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-column-start: 4;
+}
+
+.subscribtion-ad__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 119px;
+}
+
+.menu__profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    grid-column-start: 5;
+}
+
+.header__title {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.title__img {
+    display: flex;
+    justify-content: center;
+}
+
+.title__phrase {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.title__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2 / span 2;
+    font-size: 30px;
+}
+
+.title__date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 5;
+}
+
+.title__weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 6;
+}
+
+.header__nav {
+    background-color: #262D33;
+}
+
+.header__nav-container {
+    padding: 17px 0 18px 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list__link {
+    color: white;
+    font-size: 14px;
+}
