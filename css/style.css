@@ -54,7 +54,7 @@ body {
 .header__title {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: 1fr;
 }
 
 .title__img {
@@ -106,4 +106,387 @@ body {
 .nav-list__link {
     color: white;
     font-size: 14px;
+}
+
+.section-popular {
+    margin-top: 30px;
+}
+
+.section-popular__grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    background-color: #30363d;
+    border-radius: 10px;
+}
+
+.section-popular__grid > *:nth-child(-n+3) {
+    border-right: 1px solid #4B5157;
+}
+
+.grid__item {
+    display: flex;
+    gap: 15px;
+    padding: 25px 25px 30px 25px;
+}
+
+.item-text {
+    font-size: 16px;
+    max-width: 154px;
+    color: #FFFFFF;
+}
+
+.section-recommended {
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.recommended__detail {
+    max-width: 877px;
+    box-sizing: border-box;
+    padding: 55px 55px 100px 55px;
+    background-image: url("../img/Recommended_background.png");
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.detail-author {
+    display: flex;
+    gap: 10px;
+}
+
+.author-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 153px;
+    color: white;
+}
+
+.detail-subtitle {
+    color: #4592FF;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 145px;
+}
+
+.detail-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.detail-readmore {
+    display: flex;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.readmore-button {
+    display: flex;
+    gap: 5px;
+    background-color: #4592FF;
+    border-radius: 20px;
+    padding: 10px 20px 10px 25px;
+    border: none;
+}
+
+.button-text {
+    color: white;
+}
+
+.readmore-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.info-text {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 201px;
+    color: white;
+    opacity: 85%;
+}
+
+.opacity-40 {
+    opacity: 40%;
+}
+
+.recomended__list {
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.list-name {
+    color:#262D33;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px 25px;
+    border-bottom: 1px solid #D9DADB;
+}
+
+.list-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+}
+
+.list-grid > *:nth-child(-n+4) {
+    border-bottom: 1px solid #D9DADB;
+}
+
+.grid-block {
+    padding: 17px 25px 20px 25px;
+    max-width: 263px;
+    box-sizing: border-box;
+}
+
+.block-title {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.block-title_bluegreen {
+    color: #3BBDC4;
+}
+
+.block-title_greyblue {
+    color: #6E99AE;
+}
+
+.block-title_purple {
+    color: #AC8EE3;
+}
+
+.block-title_orange {
+    color: #FFA34D;
+}
+
+.block-title_green {
+    color: #3DC47E;
+}
+
+.block-text {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.sections-news {
+    margin-top: 30px;
+}
+
+.compilation__grid {
+    max-width: 848px;
+    gap: 30px;
+    display: grid;
+    grid-template-areas: 
+    "cars cars art"
+    "cars cars art"
+    "cats coffee manufacture"
+    "cats stress lemons"
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.grid-cars {
+    position: relative;
+    grid-area: cars;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 0 13px 35px;
+    box-sizing: border-box;
+}
+
+.cars-display {
+    display: flex;
+}
+
+.content-subtitle {
+    margin-top: 20px;
+    color: #6E99AE;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.content-title {
+    font-size: 25px;
+    max-width: 220px;
+    margin-top: 20px;
+}
+
+.content-text {
+    max-width: 228px;
+    font-size: 14px;
+    color: #4B5157;
+    margin-top: 25px;
+}
+
+.cars-comment {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #D9DADB;
+    padding: 12px 35px 0 0;
+}
+
+.comment-author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.author-name {
+    font-size: 14px;
+    color: #262D33;
+}
+
+.comment-text {
+    font-size: 14px;
+    color: #4B5157;
+    margin-right: 15px;
+}
+
+.comment-count {
+    display: flex;
+    gap: 5px;
+}
+
+.count-value {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #939699;
+}
+
+.grid-art {
+    grid-area: art;
+    background-image: url("../img/art.png");
+    border-radius: 10px;
+    padding: 18px 47px 25px 25px;
+    box-sizing: border-box;
+}
+
+.art-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3DC47E;
+    border-radius: 3px;
+    max-width: 66px;
+    min-height: 25px;
+}
+
+.tag-text {
+    color: white;
+    font-size: 12px;
+}
+
+.art-subtitle {
+    color: #E7D9FF;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 117px;
+}
+
+.art-title {
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+    max-width: 180px;
+    text-transform: uppercase;
+}
+
+.art-creator {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.data-name {
+    opacity: 85%;
+    font-size: 14px;
+    color: white;
+}
+
+.data-stat {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.stat-date {
+    align-self: center;
+    color: white;
+    opacity: 40%;
+    font-size: 12px;
+}
+
+.stat-comments {
+    display: flex;
+    gap: 5px;
+}
+
+.comments-img {
+    display: flex;
+    align-items: center;
+}
+
+.comments-value {
+    align-self: center;
+    font-size: 12px;
+    color: white;
+    opacity: 40%;
+}
+
+.stat-likes {
+    display: flex;
+    gap: 5px;
+}
+
+.likes-img {
+    display: flex;
+    align-items: center;
+}
+
+.likes-value {
+    align-self: center;
+    font-size: 12px;
+    color: white;
+    opacity: 40%;
+}
+
+.grid-cats {
+    background-color: white;
+    grid-area: cats;
+    border-radius: 10px;
+}
+
+
+.cats-title {
+    padding: 15px 25px 30px 25px;
+}
+
+.title__text {
+    color: #262D33;
+    font-size: 16px;
+}
+
+.grid-coffee {
+    grid-area: coffee;
+}
+
+.grid-manufacture {
+    grid-area: manufacture;
+}
+
+.grid-stress {
+    grid-area: stress;
+}
+
+.grid-lemons {
+    grid-area: lemons;
 }
