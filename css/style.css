@@ -1,5 +1,13 @@
 body {
+    position: relative;
     background-color: #edeff0;
+}
+
+.header {
+    z-index: 50;
+    background-color: white;
+    position: sticky;
+    top: 0;
 }
 
 .container {
@@ -45,6 +53,7 @@ body {
 }
 
 .menu__profile {
+    justify-self: end;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -84,6 +93,7 @@ body {
 }
 
 .title__weather {
+    justify-self: end;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -605,7 +615,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 25px; 
+    gap: 25px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .random-article__text {
@@ -629,7 +642,8 @@ body {
     padding: 25px;
     max-width: 848px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,1fr);
+    grid-auto-rows: auto;
+    grid-template-rows: 1fr;
     border-radius: 10px;
 }
 
@@ -637,8 +651,9 @@ body {
     border-bottom: 1px solid #D9DADB;
 }
 
-.collection__grid > *:nth-child(6) {
+.collection__grid > *:last-child {
     padding: 0;
+    border-bottom: none;
 }
 
 .grid-article {
