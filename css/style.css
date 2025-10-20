@@ -1,3 +1,57 @@
+@font-face {
+    font-family:"Lato medium";
+    src: local("Lato"),
+    url("../fonts/Lato-Medium.woff2") format("woff2"),
+    url("../fonts/Lato-Medium.woff") format("woff");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"Lato light";
+    src: local("Lato"),
+    url("../fonts/Lato-Light.woff2") format("woff2"),
+    url("../fonts/Lato-Light.woff") format("woff");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"Lato bold";
+    src: local("Lato"),
+    url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"Lato regular";
+    src: local("Lato"),
+    url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.woff") format("woff");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"RobotoSlab bold";
+    src: local("Lato"),
+    url("../fonts/RobotoSlab-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoSlab-Bold.woff") format("woff");
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family:"RobotoSlab regular";
+    src: local("Lato"),
+    url("../fonts/RobotoSlab-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoSlab-Regular.woff") format("woff");
+    font-style: normal;
+    font-display:swap;
+}
+
 body {
     position: relative;
     background-color: #edeff0;
@@ -29,12 +83,26 @@ body {
     border-right: 1px solid #D9DADB;
 }
 
+.burger-menu-title {
+    font-family: "Lato medium";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 .menu__search {
     display: flex;
     align-items: center;
     gap: 10px;
     grid-column: span 2 / span 2;
     margin-left: 25px;
+}
+
+.search-title {
+    font-family: "Lato medium";
+    font-size: 14px;
+    line-height: 20px;
+    color: #939699;
 }
 
 .menu__subscribtion-ad {
@@ -52,12 +120,39 @@ body {
     max-width: 119px;
 }
 
+.ad__text-title {
+    font-family: "Lato bold";
+    font-size: 12px;
+    line-height: 15px;
+    color: #262D33;
+}
+
+.ad__text-subtitle {
+    font-family: "Lato regular";
+    font-size: 12px;
+    line-height: 15px;
+    color: #939699;
+}
+
 .menu__profile {
     justify-self: end;
     display: flex;
     align-items: center;
     gap: 10px;
     grid-column-start: 5;
+}
+
+.profile-text {
+    font-family: "Lato medium";
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #4B5157;
+}
+
+.link-text-decoration {
+    color: inherit;
+    text-decoration: none;
 }
 
 .header__title {
@@ -74,7 +169,10 @@ body {
 .title__phrase {
     display: flex;
     align-items: center;
+    font-family: "Lato medium";
     font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
 }
 
 .title__text {
@@ -82,6 +180,7 @@ body {
     align-items: center;
     justify-content: center;
     grid-column: span 2 / span 2;
+    font-family: "Lato bold";
     font-size: 30px;
 }
 
@@ -90,14 +189,26 @@ body {
     align-items: center;
     justify-content: center;
     grid-column-start: 5;
+    font-family:"Lato medium";
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
 }
 
 .title__weather {
     justify-self: end;
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-column-start: 6;
+}
+
+.weather__text {
+    font-family:"Lato medium";
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
 }
 
 .header__nav {
@@ -114,8 +225,12 @@ body {
 }
 
 .nav-list__link {
+    text-transform: uppercase;
     color: white;
+    font-family: "Lato bold";
     font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
 }
 
 .section-popular {
@@ -141,7 +256,9 @@ body {
 }
 
 .item-text {
+    font-family: "RobotoSlab bold";
     font-size: 16px;
+    line-height: 25px;
     max-width: 154px;
     color: #FFFFFF;
 }
@@ -153,12 +270,15 @@ body {
 }
 
 .recommended__detail {
-    max-width: 877px;
+    min-width: 877px;
     box-sizing: border-box;
     padding: 55px 55px 100px 55px;
     background-image: url("../img/Recommended_background.png");
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .detail-author {
@@ -174,16 +294,36 @@ body {
     color: white;
 }
 
+.info-name {
+    font-family:"Lato medium";
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+
+.info-work {
+    font-family:"Lato medium";
+    font-size: 12px;
+    line-height: 15px;
+    opacity: 40%;
+    color: white;
+}
+
 .detail-subtitle {
     color: #4592FF;
+    font-family:"Lato regular";
     font-size: 12px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-top: 145px;
 }
 
 .detail-title {
+    font-family:"RobotoSlab regular";
+    max-width: 600px;
     color: white;
     font-size: 40px;
+    line-height: 50px;
     margin-top: 25px;
 }
 
@@ -207,6 +347,9 @@ body {
 .button-text {
     align-self: center;
     color: white;
+    font-family:"Lato medium";
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .button-img {
@@ -223,11 +366,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 201px;
+}
+
+.text-value {
+    font-family:"Lato regular";
+    font-size: 14px;
+    line-height: 20px;
     color: white;
     opacity: 85%;
 }
 
-.opacity-40 {
+.text-time {
+    font-family:"Lato regular";
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
     opacity: 40%;
 }
 
@@ -239,8 +392,11 @@ body {
 
 .list-name {
     color:#262D33;
+    font-family:"Lato regular";
     text-transform: uppercase;
     font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
     padding: 20px 25px;
     border-bottom: 1px solid #D9DADB;
 }
@@ -262,7 +418,10 @@ body {
 }
 
 .block-title {
+    font-family:"Lato regular";
     font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
@@ -287,8 +446,15 @@ body {
 }
 
 .block-text {
+    font-family:"Lato regular";
     font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
     margin-top: 8px;
+}
+
+.block-text-img {
+    display: inline;
 }
 
 .sections-news {
@@ -325,6 +491,9 @@ body {
 }
 
 .content-subtitle {
+    font-family:"Lato regular";
+    line-height: 15px;
+    letter-spacing: 0.5px;
     margin-top: 20px;
     color: #6E99AE;
     text-transform: uppercase;
@@ -332,16 +501,21 @@ body {
 }
 
 .content-title {
+    font-family:"RobotoSlab regular";
     font-size: 25px;
-    max-width: 220px;
+    line-height: 30px;
+    max-width: 238px;
     margin-top: 20px;
 }
 
 .content-text {
+    font-family:"Lato regular";
     max-width: 228px;
     font-size: 14px;
+    line-height: 20px;
     color: #4B5157;
     margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .cars-comment {
@@ -359,12 +533,16 @@ body {
 }
 
 .author-name {
+    font-family:"Lato bold";
+    line-height: 20px;
     font-size: 14px;
     color: #262D33;
 }
 
 .comment-text {
+    font-family:"Lato regular";
     font-size: 14px;
+    line-height: 20px;
     color: #4B5157;
     margin-right: 15px;
 }
@@ -375,9 +553,11 @@ body {
 }
 
 .count-value {
+    font-family:"Lato regular";
     display: flex;
     align-items: center;
     font-size: 12px;
+    line-height: 15px;
     color: #939699;
 }
 
@@ -400,21 +580,29 @@ body {
 }
 
 .tag-text {
+    font-family:"Lato bold";
     color: white;
     font-size: 12px;
+    line-height: 15px;
 }
 
 .art-subtitle {
+    font-family:"Lato light";
     color: #E7D9FF;
     text-transform: uppercase;
     font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
     margin-top: 117px;
 }
 
 .art-title {
+    font-family:"Lato regular";
     color: white;
     margin-top: 10px;
     font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
     max-width: 180px;
     text-transform: uppercase;
 }
@@ -426,8 +614,10 @@ body {
 }
 
 .data-name {
+    font-family:"Lato regular";
     opacity: 85%;
     font-size: 14px;
+    line-height: 20px;
     color: white;
 }
 
@@ -438,10 +628,12 @@ body {
 }
 
 .stat-date {
+    font-family:"Lato regular";
     align-self: center;
     color: white;
     opacity: 40%;
     font-size: 12px;
+    line-height: 15px;
 }
 
 .stat-comments {
@@ -455,6 +647,8 @@ body {
 }
 
 .comments-value {
+    font-family:"Lato regular";
+    line-height: 15px;
     align-self: center;
     font-size: 12px;
     color: white;
@@ -472,6 +666,8 @@ body {
 }
 
 .likes-value {
+    font-family:"Lato regular";
+    line-height: 15px;
     align-self: center;
     font-size: 12px;
     color: white;
@@ -489,9 +685,11 @@ body {
     padding: 15px 25px 30px 25px;
 }
 
-.title__text {
-    color: #262D33;
+.title-text {
+    font-family:"RobotoSlab regular";
     font-size: 16px;
+    line-height: 25px;
+    color: #262D33;
 }
 
 .grid-coffee {
@@ -505,18 +703,26 @@ body {
 }
 
 .same-title {
+    font-family:"RobotoSlab regular";
+    font-size: 16px;
+    line-height: 25px;
+    color: #262D33;
     font-size: 16px;
     color: #262D33;
 }
 
 .same-text {
+    font-family:"Lato regular";
     font-size: 14px;
+    line-height: 20px;
     color: #4B5157;
     margin-top: 5px;
 }
 
 .same-date {
+    font-family:"Lato regular";
     font-size: 12px;
+    line-height: 15px;
     color: #939699;
     margin-top: 10px;
 }
@@ -539,8 +745,11 @@ body {
 }
 
 .columns-title {
+    font-family:"Lato regular";
     padding: 20px 25px;
     font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     color: white;
     border-bottom: 1px solid #B4D1E0;
@@ -566,10 +775,12 @@ body {
 }
 
 .quote-text {
+    font-family:"Lato regular";
     position: relative;
     z-index: 2;
-    margin: 10px 0 0 10px;
+    margin-left: 10px;
     font-size: 20px;
+    line-height: 25px;
     color: white;
 }
 
@@ -584,13 +795,17 @@ body {
 }
 
 .name-value {
+    font-family:"Lato regular";
     font-size: 14px;
+    line-height: 20px;
     color: #D1E2EB;
 }
 
 .name-job {
-    margin-top: 5px;
+    font-family:"Lato regular";
     font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
     color: #D1E2EB;
 }
 
@@ -602,6 +817,8 @@ body {
 }
 
 .link-value {
+    font-family:"Lato bold";
+    line-height: 20px;
     text-decoration: none;
     color: white;
     font-size: 14px;
@@ -622,6 +839,7 @@ body {
 }
 
 .random-article__text {
+    font-family:"RobotoSlab regular";
     font-size: 40px;
     color: white;
     justify-self: center;
@@ -667,21 +885,28 @@ body {
 }
 
 .data-subtitle {
+    font-family: "Lato light";
     text-transform: uppercase;
     font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
 }
 
 .data-title {
+    font-family: "RobotoSlab regular";
     max-width: 450px;
     margin-top: 15px;
     font-size: 20px;
+    line-height: 25px;
     color: #262D33;
 }
 
 .data-text {
+    font-family: "Lato regular";
     max-width: 450px;
     margin-top: 10px;
     font-size: 14px;
+    line-height: 20px;
     color: #4B5157;
 }
 
@@ -713,4 +938,70 @@ body {
 
 .data-subtitle_purple {
     color: #AC8EE3;
+}
+
+.collection__top {
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.top-title {
+    padding: 20px 25px;
+    font-family: "Lato regular";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #262D33;
+    text-transform: uppercase;
+    border-bottom: 1px solid #D9DADB;
+}
+
+.top-grid {
+    gap: 18px;
+    display: grid;
+    padding: 18px 25px 0 25px;
+}
+
+.grid-topic {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #D9DADB;
+}
+
+.topic-text {
+    z-index: 2;
+}
+
+.topic-title {
+    max-width: 143px;
+    font-family: "Lato regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+}
+
+.topic-time {
+    margin-top: 5px;
+    font-family: "Lato regular";
+    font-size: 12px;
+    line-height: 15px;
+    color: #939699;
+}
+
+.topic-num {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 5px;
+}
+
+.top-grid > *:nth-child(1) {
+    padding-top: none;
+}
+
+.top-link {
+    color: #262D33;
 }
