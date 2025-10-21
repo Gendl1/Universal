@@ -47,6 +47,12 @@ table {
 }
 
 img {
-	max-width: 100%;
+	/* max-width: 100%; */
 	display: block;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+    outline: none;
 }

@@ -10,117 +10,112 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__menu">
-                <div class="menu__burger-menu">
-                    <div class="burger-menu__img">
-                        <img src="./img/Hamburger menu.svg">
-                    </div>
-                    <p class="burger-menu-title">Sections</p>
+        <div class="header__menu container">
+            <div class="menu__burger-menu">
+                <div class="burger-menu__img">
+                    <img src="./img/Hamburger menu.svg">
                 </div>
+                <p class="burger-menu-title">Sections</p>
+            </div>
                 
-                <div class="menu__search">
-                    <div class="search__img">
-                        <img src="./img/Search.svg">
-                    </div>
-                    <p href="#" class="search-title">Search</p>
+            <div class="menu__search">
+                <div class="search__img">
+                    <img src="./img/Search.svg">
+                </div>                                                          
+                <input class="search-title" id = "1" placeholder="Search">
+            </div>
+                
+            <div class="menu__subscribtion-ad">
+                <div class="subscribtion-ad__img">
+                    <img src="./img/Header_image.svg">
                 </div>
-                
-                <div class="menu__subscribtion-ad">
-                    <div class="subscribtion-ad__img">
-                        <img src="./img/Header_image.svg">
-                    </div>
-                    <div class="subscribtion-ad__text">
-                        <p class="ad__text-title">Subscribe Now</p>
-                        <p class="ad__text-subtitle">3 month for $19</p>
-                    </div>
-                </div>
-                
-                <div class="menu__profile">
-                    <img src="./img/Profile.svg">
-                    <a href="#" class="profile-text">Sign in</a>
+                <div class="subscribtion-ad__text">
+                    <p class="ad__text-title">Subscribe Now</p>
+                    <p class="ad__text-subtitle">3 month for $19</p>
                 </div>
             </div>
-        </div>
+                
+            <div class="menu__profile">
+                <img src="./img/Profile.svg">
+                <a href="#" class="profile-text">Sign in</a>
+            </div>
 
-        <div class="container">
-            <div class="header__title">
-                <div class="title__img">
-                    <img src="./img/Statue.svg">
+            <div class="menu__img">
+                <a href="#"><img src="./img/Statue.svg"></a>
+            </div>
+
+            <div class="menu__phrase">
+                <p>Boston and New York Bear Brunt</p>
+            </div>
+
+            <div class="menu__text">
+                <a href="#"class = "text-decoration"><h1>Universal</h1></a>
+            </div>
+
+            <div class="menu__date">
+                <p>Monday, January 1, 2018</p>
+            </div>
+
+            <div class="menu__weather">
+                <div class="weather__img">
+                    <img src="./img/Sun.svg">
                 </div>
-
-                <div class="title__phrase">
-                    <p>Boston and New York Bear Brunt</p>
-                </div>
-
-                <div class="title__text">
-                    <h1>Universal</h1>
-                </div>
-
-                <div class="title__date">
-                    <p>Monday, January 1, 2018</p>
-                </div>
-
-                <div class="title__weather">
-                    <div class="weather__img">
-                        <img src="./img/Sun.svg">
-                    </div>
-                    <div class="weather__text">
-                        <p>- 23 °C</p>
-                    </div>
+                <div class="weather__text">
+                    <p>- 23 °C</p>
                 </div>
             </div>
+
         </div>
 
         <div class="header__nav">
-            <div class="header__nav-container container">
-                <div class="nav-list">
-                    <div class="nav-list__link">
+            <nav class="header__nav-container container">
+                <ul class="nav-list">
+                    <li class="nav-list__link">
                         <a>news</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>opinion</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>science</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>life</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>travel</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>moneys</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>art & design</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>sports</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>people</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>health</a>
-                    </div>
+                    </li>
 
-                    <div class="nav-list__link">
+                    <li class="nav-list__link">
                         <a>education</a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
                 
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -205,7 +200,7 @@
             
         </div>
 
-        <div class="recomended__list">
+        <article class="recomended__list">
             <h4 class="list-name">Recommended for you</h4>
 
             <div class="list-grid">
@@ -254,7 +249,7 @@
 
             </div>
 
-        </div>
+        </article>
     </section>
     
     <section class="sections-news container">
@@ -299,30 +294,32 @@
                         <span class="tag-text">Popular</span>
                     </div>
 
-                    <h5 class="art-subtitle">Art & Design</h5>
-                    <h4 class="art-title">Invisible ink: the weird world of tattoo removal – in pictures</h4>
+                    <div class="art-display">
+                        <h5 class="display-subtitle">Art & Design</h5>
+                        <h4 class="display-title">Invisible ink: the weird world of tattoo removal – in pictures</h4>
 
-                    <div class="art-creator">
-                        <div class="creator-avatar">
-                            <img src="./img/art_avatar.png">
-                        </div>
+                        <div class="display-creator">
+                            <div class="creator-avatar">
+                                <img src="./img/art_avatar.png">
+                            </div>
 
-                        <div class="creator-data">
-                            <span class="data-name">By Sarah Jenkins</span>
+                            <div class="creator-data">
+                                <span class="data-name">By Sarah Jenkins</span>
 
-                            <div class="data-stat">
-                                <div class="stat-date">Sept 26</div>
-                                <div class="stat-comments">
-                                    <div class="comments-img">
-                                        <img src="./img/comment_icon.svg">
+                                <div class="data-stat">
+                                    <div class="stat-date">Sept 26</div>
+                                    <div class="stat-comments">
+                                        <div class="comments-img">
+                                            <img src="./img/comment_icon.svg">
+                                        </div>
+                                        <span class="comments-value">16</span>
                                     </div>
-                                    <span class="comments-value">16</span>
-                                </div>
-                                <div class="stat-likes">
-                                    <div class="likes-img">
-                                        <img src="./img/like_icon.svg">
+                                    <div class="stat-likes">
+                                        <div class="likes-img">
+                                            <img src="./img/like_icon.svg">
+                                        </div>
+                                        <span class="likes-value">832</span>
                                     </div>
-                                    <span class="likes-value">832</span>
                                 </div>
                             </div>
                         </div>
@@ -371,7 +368,7 @@
                 </div>
             </div>
 
-        <div class="news__columns">
+        <esite class="news__columns">
             <div class="columns-title">
                 <h4>Columns</h4>
             </div>
@@ -429,7 +426,7 @@
             <div class="columns-link">
                 <p class="link-value" >Read more</p>
             </div>
-        </div>
+        </esite>
     </section>
 
     <div class="random-article"> 
@@ -457,7 +454,7 @@
                 </div>
 
                 <div class="article-data">
-                    <h5 class="data-subtitle data-subtitle_blue">Flights</h5>
+                    <h5 class="data-subtitle data-subtitle_flights">Flights</h5>
                     <h4 class="data-title">Passengers Suffer as Crowded Field Puts Pressure on Europe’s Airlines</h4>
                     <p class="data-text">Weaker carriers have fallen by the wayside amid fierce competition, while others have been hit by bad luck. The result: thousands of canceled flights.</p>
 
@@ -491,7 +488,7 @@
                 </div>
 
                 <div class="article-data">
-                    <h5 class="data-subtitle data-subtitle_bluegreen">Food</h5>
+                    <h5 class="data-subtitle data-subtitle_food">Food</h5>
                     <h4 class="data-title">Three Courses, 20 Euros: The Affordable Dining Renaissance in Paris</h4>
                     <p class="data-text">The Los Angeles area, for all of its culinary diversity, has not historically been thought of as a haven for bread lovers. The area has a reputation as a place where gluten fears to tread.</p>
 
@@ -525,7 +522,7 @@
                 </div>
 
                 <div class="article-data">
-                    <h5 class="data-subtitle data-subtitle_red">Science</h5>
+                    <h5 class="data-subtitle data-subtitle_science">Science</h5>
                     <h4 class="data-title">TWatch the High-Flying Physics of a Plant’s Exploding Fruits</h4>
                     <p class="data-text">Three undergradute physics majors and their professor worked out how the hairyflower wild petunia shoots tiny seeds more than 20 feet through the air</p>
 
@@ -559,7 +556,7 @@
                 </div>
 
                 <div class="article-data">
-                    <h5 class="data-subtitle data-subtitle_bluegreen">Health</h5>
+                    <h5 class="data-subtitle data-subtitle_food">Health</h5>
                     <h4 class="data-title">How the Shape of Your Ears Affects What You Hear</h4>
                     <p class="data-text">We’re able to locate sound because our brains grasp the shape of our ears. When that shape changes, we need time and practice to adapt. Ears are a peculiarly individual piece of anatomy.</p>
 
@@ -592,7 +589,7 @@
                 </div>
 
                 <div class="article-data">
-                    <h5 class="data-subtitle data-subtitle_red">Science</h5>
+                    <h5 class="data-subtitle data-subtitle_science">Science</h5>
                     <h4 class="data-title">Forests Protect the Climate. A Future With More Storms Would Mean Trouble.</h4>
                     <p class="data-text">With an increase in extreme weather expected in the years to come, forests could be changed permanently as the world continues to warm</p>
 
@@ -625,7 +622,7 @@
                 </div>
 
                 <div class="article-data">
-                    <h5 class="data-subtitle data-subtitle_purple">Art & Design</h5>
+                    <h5 class="data-subtitle data-subtitle_artndesign">Art & Design</h5>
                     <h4 class="data-title">New Contemporary Institute Reverberates in Richmond’s Historic Landscape</h4>
                     <p class="data-text">The center, which will open in April, takes a bold look at race and other social issues that still resonate in the region as well as the nation. A new Institute for Contemporary Art is set to open.</p>
 
@@ -761,9 +758,79 @@
                 <p class="top-link link-value" >Read more</p>
             </div>
         </div>
+    </section>
 
-        
+    <section class="section-hot">
+        <div class="section-hot__grid container">
+            <div class="grid-photo">
+                <div class="photo-tag">
+                    <span>Hot</span>
+                </div>
 
+                <div class="photo-maker">
+                    <div class="maker-img">
+                        <img src="./img/photo_maker_img.png">
+                    </div>
+                    <p class="maker-name info-name">By Sarah Jenkins</p>
+                    <p class="maker-job info-work">Photographer</p>
+                </div>
+
+                <p class="photo-text">Readers' Choice winners: Your wine country favorites</p>
+
+                <button class="photo-button">
+                    <div class="button-icon">
+                        <img src="./img/button_icon.svg">
+                    </div>
+
+                    <div class="button-desc">
+                        <span class="desc-text">Watch photos</span>
+                        <span class="desc-value">26</span>
+                    </div>
+
+                </button>
+            </div>
+
+            <div class="grid-careers">
+                <div class="careers-general">
+                    <h4 class="general-subtitle">Careers</h4>
+                    <h3 class="general-title">Had a Job Interview but No Callback? Here’s What to Do</h3>
+                    <p class="general-text">Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize</p>
+
+                    <button class="general-button readmore-button">
+                        <div class="button-text">
+                            <span>Read more</span>
+                        </div>
+
+                        <div class="button-img">
+                            <img src="./img/recomended_arrow.svg">
+                        </div>
+                    </button>
+                </div>
+
+                <div class="careers-img">
+                    <img src="./img/careers_img.png">
+                </div>
+
+                
+            </div>
+
+            <div class="grid-coffee grid-same">
+                    <h4 class="same-title">Is Coffee Bad for Bones?</h4>
+
+                    <p class="same-text">Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones</p>
+
+                    <p class="same-date">Oct 15</p>
+            </div>
+
+            <div class="grid-manufacture grid-same">
+                    <h4 class="same-title">What We Manufacture</h4>
+
+                    <p class="same-text">A global history of the factory and the modern world that all should read</p>
+
+                    <p class="same-date">Oct 14</p>
+                </div>
+
+        </div>
     </section>
 </body>
 </html>

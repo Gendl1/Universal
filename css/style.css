@@ -71,16 +71,18 @@ body {
 
 .header__menu {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    border-bottom: 1px solid #D9DADB;
+    grid-template-areas: 
+    "sections search . . subscribe sign"
+    "statue phrase txt txt date weather";
 }
 
 .menu__burger-menu {
+    grid-area: sections;
     display: flex;
     align-items: center;
     gap: 15px;
     border-right: 1px solid #D9DADB;
+    border-bottom: 1px solid #D9DADB;
 }
 
 .burger-menu-title {
@@ -88,14 +90,16 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    border-bottom: 1px solid #D9DADB;
 }
 
 .menu__search {
+    grid-area: search;
     display: flex;
     align-items: center;
     gap: 10px;
-    grid-column: span 2 / span 2;
-    margin-left: 25px;
+    padding-left: 25px;
+    border-bottom: 1px solid #D9DADB;
 }
 
 .search-title {
@@ -103,13 +107,17 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #939699;
+    border: none;
+    background: transparent;
 }
 
 .menu__subscribtion-ad {
+    grid-area: subscribe;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    grid-column-start: 4;
+    border-bottom: 1px solid #D9DADB;
 }
 
 .subscribtion-ad__text {
@@ -135,11 +143,12 @@ body {
 }
 
 .menu__profile {
+    grid-area: sign;
     justify-self: end;
     display: flex;
     align-items: center;
     gap: 10px;
-    grid-column-start: 5;
+    border-bottom: 1px solid #D9DADB;
 }
 
 .profile-text {
@@ -150,23 +159,14 @@ body {
     color: #4B5157;
 }
 
-.link-text-decoration {
-    color: inherit;
-    text-decoration: none;
-}
-
-.header__title {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
-}
-
-.title__img {
+.menu__img {
+    grid-area: statue;
     display: flex;
     justify-content: center;
 }
 
-.title__phrase {
+.menu__phrase {
+    grid-area: phrase;
     display: flex;
     align-items: center;
     font-family: "Lato medium";
@@ -175,33 +175,39 @@ body {
     color: #4B5157;
 }
 
-.title__text {
+.menu__text {
+    grid-area: txt;
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-column: span 2 / span 2;
     font-family: "Lato bold";
     font-size: 30px;
+    text-decoration: none;
 }
 
-.title__date {
+.text-decoration {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu__date {
+    grid-area: date;
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-column-start: 5;
     font-family:"Lato medium";
     font-size: 14px;
     line-height: 20px;
     color: #4B5157;
 }
 
-.title__weather {
+.menu__weather {
+    grid-area: weather;
     justify-self: end;
     gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-column-start: 6;
 }
 
 .weather__text {
@@ -235,6 +241,7 @@ body {
 
 .section-popular {
     margin-top: 30px;
+    padding: 0 15px 0 15px;
 }
 
 .section-popular__grid {
@@ -567,6 +574,12 @@ body {
     border-radius: 10px;
     padding: 18px 47px 25px 25px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .art-tag {
@@ -586,17 +599,16 @@ body {
     line-height: 15px;
 }
 
-.art-subtitle {
+.display-subtitle {
     font-family:"Lato light";
     color: #E7D9FF;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.5px;
-    margin-top: 117px;
 }
 
-.art-title {
+.display-title {
     font-family:"Lato regular";
     color: white;
     margin-top: 10px;
@@ -607,7 +619,7 @@ body {
     text-transform: uppercase;
 }
 
-.art-creator {
+.display-creator {
     display: flex;
     margin-top: 15px;
     gap: 10px;
@@ -854,6 +866,7 @@ body {
 }
 
 .collection__grid {
+    height: 100%;
     display: grid;
     gap: 25px;
     background-color: white;
@@ -924,19 +937,19 @@ body {
     right: 0;
 }
 
-.data-subtitle_blue {
+.data-subtitle_flights {
     color: #4592FF;
 }
 
-.data-subtitle_bluegreen {
+.data-subtitle_food {
     color: #3BBDC4;
 }
 
-.data-subtitle_red {
+.data-subtitle_science {
     color: #FF4F52;
 }
 
-.data-subtitle_purple {
+.data-subtitle_artndesign {
     color: #AC8EE3;
 }
 
@@ -1004,4 +1017,134 @@ body {
 
 .top-link {
     color: #262D33;
+}
+
+.section-hot {
+    background-color: #262D33;
+    padding: 60px 0 60px 0;
+}
+
+.section-hot__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "photo photo careers careers"
+    "photo photo careers careers"
+    "photo photo coffee manufacture";
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.grid-photo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: photo;
+    background-image: url("../img/hot-photo.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 50px 50px 40px 50px;
+}
+
+.photo-tag{
+    font-family: "Lato bold";
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    display: flex;
+    min-width: 45px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background-color: #FF4F52;
+    padding: 5px 0 5px 0;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.maker-img {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-text {
+    justify-self: center;
+    text-align: center;
+    max-width: 455px;
+    font-family: "RobotoSlab bold";
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 30px;
+    color: white;
+}
+
+.photo-button {
+    display: flex;
+    gap: 10px;
+    margin-top: 45px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4592FF;
+    padding: 10px 25px 10px 20px;
+}
+
+.button-desc {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.desc-text {
+    font-family:"Lato bold";
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+
+.desc-value {
+    font-family: "Lato regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #C5E4FC;
+}
+
+.grid-careers {
+    gap: 10px;
+    grid-area: careers;
+    display: flex;
+    background-color: #B4D1E0;
+    border-radius: 10px;
+    padding: 18px 30px 0 30px;
+}
+
+.general-subtitle {
+    font-family: "Lato regular";
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #6E99AE;
+}
+
+.general-title {
+    font-family:"RobotoSlab bold";
+    font-size: 25px;
+    line-height: 30px;
+    color: #262D33;
+    margin-top: 20px;
+}
+
+.general-text {
+    font-family: "Lato regular";
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+    margin-top: 15px;
+}
+
+.general-button {
+    margin-top: 25px;
 }
