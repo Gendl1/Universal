@@ -12,10 +12,25 @@
     <header class="header">
         <div class="header__menu container">
             <div class="menu__burger-menu">
-                <div class="burger-menu__img">
-                    <img src="./img/Hamburger menu.svg">
+                <div class="burger-menu__icon">
+                    <span class="icon__line"></span>
                 </div>
                 <p class="burger-menu-title">Sections</p>
+                <div class="burger-menu-nav">
+                    <ul class="nav__items">
+                        <li>News</li>
+                        <li>Opinion</li>
+                        <li>Science</li>
+                        <li>Life</li>
+                        <li>Travel</li>
+                        <li>Moneys</li>
+                        <li>Art & Design</li>
+                        <li>Sports</li>
+                        <li>People</li>
+                        <li>Health</li>
+                        <li>Education</li>
+                    </ul>
+                </div>
             </div>
                 
             <div class="menu__search">
@@ -832,5 +847,117 @@
 
         </div>
     </section>
+
+    <footer class="footer container">
+        <h3 class="footer__title">Subscribe now and get 20% off</h3>
+
+        <div class="footer__form">
+            <div class="form-input">
+                <input id="2" class="input-field" placeholder="Enter your email">
+            </div>
+
+            <button class="form-button">
+                <span>Subscribe</span>
+            </button>
+        </div>
+
+        <div class="footer__grid">
+            <div class="grid-news grid-equal">
+                <a href="#" class="equal-title">News</a>
+                <a href="#" class="equal-subtitle">Nation</a>
+                <a href="#" class="equal-subtitle">World</a>
+                <a href="#" class="equal-subtitle">Politics</a>
+                <a href="#" class="equal-subtitle">Solar Eclipse</a>
+            </div>
+
+            <div class="grid-arts grid-equal">
+                <a href="#" class="equal-title">Arts</a>
+                <a href="#" class="equal-subtitle">Art & Design</a>
+                <a href="#" class="equal-subtitle">Movies</a>
+                <a href="#" class="equal-subtitle">People</a>
+                <a href="#" class="equal-subtitle">Video: Arts</a>
+                <a href="#" class="equal-subtitle">Theater</a>
+            </div>
+
+            <div class="grid-travel grid-equal">
+                <a href="#" class="equal-title">Travel</a>
+                <a href="#" class="equal-subtitle">Destinations</a>
+                <a href="#" class="equal-subtitle">Flights</a>
+                <a href="#" class="equal-subtitle">Business Travel</a>
+            </div>
+
+            <div class="grid-sports grid-equal">
+                <a href="#" class="equal-title">Sports</a>
+                <a href="#" class="equal-subtitle">Olympics</a>
+                <a href="#" class="equal-subtitle">Motor Sports</a>
+                <a href="#" class="equal-subtitle">Volleyball</a>
+                <a href="#" class="equal-subtitle">MMA</a>
+                <a href="#" class="equal-subtitle">Cycling</a>
+            </div>
+
+            <div class="grid-tech grid-equal">
+                <a href="#" class="equal-title">Tech</a>
+                <a href="#" class="equal-subtitle">Tech</a>
+                <a href="#" class="equal-subtitle">Tech Columnists</a>
+                <a href="#" class="equal-subtitle">Tech Reviews</a>
+                <a href="#" class="equal-subtitle">Talking Tech</a>
+            </div>
+
+            <div class="grid-moneys grid-equal">
+                <a href="#" class="equal-title">Moneys</a>
+                <a href="#" class="equal-subtitle">Markets</a>
+                <a href="#" class="equal-subtitle">Business</a>
+                <a href="#" class="equal-subtitle">Personal Finance</a>
+                <a href="#" class="equal-subtitle">Retirement</a>
+                <a href="#" class="equal-subtitle">Careers</a>
+            </div>
+
+        </div>
+
+        <div class="footer__contacts">
+            <div class="contacts-links">
+                <div class="links-img">
+                    <a><img src="./img/contacts-img.svg"></a>
+                </div>
+                <a href="#" class="links-value">Contact Us</a>
+                <a href="#" class="links-value">Work with Us</a>
+                <a href="#" class="links-value">Advertise</a>
+                <a href="#" class="links-value">Your Ad Choise</a>
+            </div>
+
+            <div class="contacts-socialmedia">
+                <div class="socialmedia-facebook">
+                    <a href="#"><img src="./img/facebook.svg"></a>
+                </div>
+
+                <div class="socialmedia-twitter">
+                    <a href="#"><img src="./img/twitter.svg"></a>
+                </div>
+
+                <div class="socialmedia-youtube">
+                    <a href="#"><img src="./img/youtube.svg"></a>
+                </div>
+
+                <div class="socialmedia-instagram">
+                    <a href="#"><img src="./img/instagram.svg"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer__addit-info">
+            <p class="addit-info-text">Universal’s business concept is to offer fashion and quality at the best price in a sustainable way. Universal has since it was founded in 2015 grown into one of the world's leading fashion companies. </p>
+            <p class="addit-info-copyright">© 2019 Universal UI Kit</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.burger-menu__icon').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.burger-menu-nav').classList.toggle('open');
+        })
+    </script>
+
 </body>
 </html>
