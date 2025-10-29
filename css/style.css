@@ -147,7 +147,7 @@ body {
     display: none;
     font-family: "Lato medium";
     font-weight: 400;
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
 }
 
@@ -162,7 +162,7 @@ body {
 
 .search-title {
     font-family: "Lato medium";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #939699;
     border: none;
@@ -188,14 +188,14 @@ body {
 
 .ad__text-title {
     font-family: "Lato bold";
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
     color: #262D33;
 }
 
 .ad__text-subtitle {
     font-family: "Lato regular";
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
     color: #939699;
 }
@@ -211,7 +211,7 @@ body {
 
 .profile-text {
     font-family: "Lato medium";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     text-decoration: none;
     color: #4B5157;
@@ -228,7 +228,7 @@ body {
     display: flex;
     align-items: center;
     font-family: "Lato medium";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
 }
@@ -239,8 +239,9 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "Lato bold";
-    font-size: 30px;
+    font-size: clamp(0.9375rem, 0.625rem + 1.3889vw, 1.875rem);
     text-decoration: none;
+    border-top: 1px solid #D9DADB;
 }
 
 .text-decoration {
@@ -254,7 +255,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family:"Lato medium";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
 }
@@ -270,7 +271,7 @@ body {
 
 .weather__text {
     font-family:"Lato medium";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
 }
@@ -322,7 +323,7 @@ body {
 
 .item-text {
     font-family: "RobotoSlab bold";
-    font-size: 16px;
+    font-size: clamp(0.375rem, 0.1667rem + 0.9259vw, 1rem);
     line-height: 25px;
     max-width: 154px;
     color: #FFFFFF;
@@ -336,7 +337,7 @@ body {
 }
 
 .recommended__detail {
-    min-width: 877px;
+    width: 80%;
     box-sizing: border-box;
     padding: 55px 55px 100px 55px;
     background-image: url("../img/Recommended_background.png");
@@ -353,8 +354,6 @@ body {
 }
 
 .author-info {
-    display: flex;
-    flex-wrap: wrap;
     align-items: center;
     max-width: 153px;
     color: white;
@@ -362,14 +361,14 @@ body {
 
 .info-name {
     font-family:"Lato medium";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: white;
 }
 
 .info-work {
     font-family:"Lato medium";
-    font-size: 12px;
+    font-size: clamp(0.5625rem, 0.5rem + 0.2778vw, 0.75rem);
     line-height: 15px;
     opacity: 40%;
     color: white;
@@ -378,7 +377,7 @@ body {
 .detail-subtitle {
     color: #4592FF;
     font-family:"Lato regular";
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-top: 145px;
@@ -388,7 +387,7 @@ body {
     font-family:"RobotoSlab regular";
     max-width: 600px;
     color: white;
-    font-size: 40px;
+    font-size: clamp(1.25rem, 0.8333rem + 1.8519vw, 2.5rem);
     line-height: 50px;
     margin-top: 25px;
 }
@@ -414,7 +413,7 @@ body {
     align-self: center;
     color: white;
     font-family:"Lato medium";
-    font-size: 14px;
+    font-size: clamp(0.4375rem, 0.2917rem + 0.6481vw, 0.875rem);
     line-height: 20px;
 }
 
@@ -429,14 +428,12 @@ body {
 }
 
 .info-text {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 201px;
 }
 
 .text-value {
     font-family:"Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: white;
     opacity: 85%;
@@ -460,7 +457,7 @@ body {
     color:#262D33;
     font-family:"Lato regular";
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     letter-spacing: 0.5px;
     padding: 20px 25px;
@@ -485,35 +482,35 @@ body {
 
 .block-title {
     font-family:"Lato regular";
-    font-size: 12px;
+    font-size: clamp(0.5625rem, 0.5rem + 0.2778vw, 0.75rem);
     line-height: 15px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
-.block-title_bluegreen {
+.block-title_food {
     color: #3BBDC4;
 }
 
-.block-title_greyblue {
+.block-title_cars {
     color: #6E99AE;
 }
 
-.block-title_purple {
+.block-title_movies {
     color: #AC8EE3;
 }
 
-.block-title_orange {
+.block-title_nfl {
     color: #FFA34D;
 }
 
-.block-title_green {
+.block-title_tech {
     color: #3DC47E;
 }
 
 .block-text {
     font-family:"Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
     margin-top: 8px;
@@ -564,12 +561,12 @@ body {
     margin-top: 20px;
     color: #6E99AE;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
 }
 
 .content-title {
     font-family:"RobotoSlab regular";
-    font-size: 25px;
+    font-size: clamp(0.75rem, 0.4792rem + 1.2037vw, 1.5625rem);
     line-height: 30px;
     max-width: 238px;
     margin-top: 20px;
@@ -578,7 +575,7 @@ body {
 .content-text {
     font-family:"Lato regular";
     max-width: 228px;
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
     margin-top: 25px;
@@ -602,13 +599,13 @@ body {
 .author-name {
     font-family:"Lato bold";
     line-height: 20px;
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     color: #262D33;
 }
 
 .comment-text {
     font-family:"Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
     margin-right: 15px;
@@ -623,7 +620,7 @@ body {
     font-family:"Lato regular";
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
     color: #939699;
 }
@@ -655,7 +652,7 @@ body {
 .tag-text {
     font-family:"Lato bold";
     color: white;
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
 }
 
@@ -663,7 +660,7 @@ body {
     font-family:"Lato light";
     color: #E7D9FF;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
     letter-spacing: 0.5px;
 }
@@ -672,7 +669,7 @@ body {
     font-family:"Lato regular";
     color: white;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: clamp(0.5rem, 0.3333rem + 0.7407vw, 1rem);
     line-height: 25px;
     letter-spacing: 0.5px;
     max-width: 180px;
@@ -688,7 +685,7 @@ body {
 .data-name {
     font-family:"Lato regular";
     opacity: 85%;
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: white;
 }
@@ -704,7 +701,7 @@ body {
     align-self: center;
     color: white;
     opacity: 40%;
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
 }
 
@@ -722,7 +719,7 @@ body {
     font-family:"Lato regular";
     line-height: 15px;
     align-self: center;
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     color: white;
     opacity: 40%;
 }
@@ -741,7 +738,7 @@ body {
     font-family:"Lato regular";
     line-height: 15px;
     align-self: center;
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     color: white;
     opacity: 40%;
 }
@@ -759,7 +756,7 @@ body {
 
 .title-text {
     font-family:"RobotoSlab regular";
-    font-size: 16px;
+    font-size: clamp(0.5625rem, 0.4167rem + 0.6481vw, 1rem);
     line-height: 25px;
     color: #262D33;
 }
@@ -776,16 +773,14 @@ body {
 
 .same-title {
     font-family:"RobotoSlab regular";
-    font-size: 16px;
+    font-size: clamp(0.5625rem, 0.4167rem + 0.6481vw, 1rem);
     line-height: 25px;
-    color: #262D33;
-    font-size: 16px;
     color: #262D33;
 }
 
 .same-text {
     font-family:"Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.4375rem, 0.2917rem + 0.6481vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
     margin-top: 5px;
@@ -793,7 +788,7 @@ body {
 
 .same-date {
     font-family:"Lato regular";
-    font-size: 12px;
+    font-size: clamp(0.4375rem, 0.3333rem + 0.463vw, 0.75rem);
     line-height: 15px;
     color: #939699;
     margin-top: 10px;
@@ -812,6 +807,7 @@ body {
 }
 
 .news__columns {
+    height: 100%;
     background-color: #6E99AE;
     border-radius: 10px;
 }
@@ -819,7 +815,7 @@ body {
 .columns-title {
     font-family:"Lato regular";
     padding: 20px 25px;
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -851,7 +847,7 @@ body {
     position: relative;
     z-index: 2;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: clamp(0.625rem, 0.4167rem + 0.9259vw, 1.25rem);
     line-height: 25px;
     color: white;
 }
@@ -868,14 +864,14 @@ body {
 
 .name-value {
     font-family:"Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5rem, 0.375rem + 0.5556vw, 0.875rem);
     line-height: 20px;
     color: #D1E2EB;
 }
 
 .name-job {
     font-family:"Lato regular";
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
     margin-top: 5px;
     color: #D1E2EB;
@@ -893,7 +889,7 @@ body {
     line-height: 20px;
     text-decoration: none;
     color: white;
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
 }
 
 .random-article {
@@ -912,7 +908,7 @@ body {
 
 .random-article__text {
     font-family:"RobotoSlab regular";
-    font-size: 40px;
+    font-size: clamp(1.25rem, 0.8333rem + 1.8519vw, 2.5rem);
     color: white;
     justify-self: center;
     max-width: 946px;
@@ -961,7 +957,7 @@ body {
 .data-subtitle {
     font-family: "Lato light";
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: clamp(0.4375rem, 0.3333rem + 0.463vw, 0.75rem);
     line-height: 15px;
     letter-spacing: 0.5px;
 }
@@ -970,7 +966,7 @@ body {
     font-family: "RobotoSlab regular";
     max-width: 450px;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: clamp(0.625rem, 0.4167rem + 0.9259vw, 1.25rem);
     line-height: 25px;
     color: #262D33;
 }
@@ -979,7 +975,7 @@ body {
     font-family: "Lato regular";
     max-width: 450px;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
 }
@@ -1023,7 +1019,7 @@ body {
 .top-title {
     padding: 20px 25px;
     font-family: "Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     letter-spacing: 0.5px;
     color: #262D33;
@@ -1052,7 +1048,7 @@ body {
 .topic-title {
     max-width: 143px;
     font-family: "Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
 }
@@ -1060,7 +1056,7 @@ body {
 .topic-time {
     margin-top: 5px;
     font-family: "Lato regular";
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
     color: #939699;
 }
@@ -1081,6 +1077,7 @@ body {
 }
 
 .section-hot {
+    margin-top: 60px;
     background-color: #262D33;
     padding: 60px 20px 60px 20px;
 }
@@ -1112,7 +1109,7 @@ body {
 
 .photo-tag{
     font-family: "Lato bold";
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
     color: white;
     display: flex;
@@ -1136,7 +1133,7 @@ body {
     text-align: center;
     max-width: 455px;
     font-family: "RobotoSlab bold";
-    font-size: 40px;
+    font-size: clamp(1.25rem, 0.8333rem + 1.8519vw, 2.5rem);
     line-height: 50px;
     margin-top: 30px;
     color: white;
@@ -1160,14 +1157,14 @@ body {
 
 .desc-text {
     font-family:"Lato bold";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: white;
 }
 
 .desc-value {
     font-family: "Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #C5E4FC;
 }
@@ -1181,9 +1178,13 @@ body {
     padding: 18px 30px 0 30px;
 }
 
+.careers-general {
+    width: 50%;
+}
+
 .general-subtitle {
     font-family: "Lato regular";
-    font-size: 12px;
+    font-size: clamp(0.5rem, 0.4167rem + 0.3704vw, 0.75rem);
     line-height: 15px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -1192,7 +1193,7 @@ body {
 
 .general-title {
     font-family:"RobotoSlab bold";
-    font-size: 25px;
+    font-size: clamp(0.75rem, 0.4792rem + 1.2037vw, 1.5625rem);
     line-height: 30px;
     color: #262D33;
     margin-top: 20px;
@@ -1200,7 +1201,7 @@ body {
 
 .general-text {
     font-family: "Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
     margin-top: 15px;
@@ -1208,6 +1209,11 @@ body {
 
 .general-button {
     margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.careers-img {
+    width: 50%;
 }
 
 .footer {
@@ -1217,7 +1223,7 @@ body {
 .footer__title {
     justify-self: center;
     font-family:"RobotoSlab bold";
-    font-size: 40px;
+    font-size: clamp(1.25rem, 0.8333rem + 1.8519vw, 2.5rem);
     line-height: 50px;
     color: #262D33;
 }
@@ -1231,7 +1237,7 @@ body {
 
 .input-field {
     font-family: "Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     padding: 10px 10px 10px 15px;
     border-radius: 5px;
@@ -1243,7 +1249,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: "Lato bold";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: white;
     border: none;
@@ -1267,7 +1273,7 @@ body {
     text-decoration: none;
     margin-top: 30px;
     font-family: "Lato bold";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #262D33;
 }
@@ -1276,7 +1282,7 @@ body {
     text-decoration: none;
     display: block;
     font-family: "Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
     margin-top: 15px;
@@ -1328,7 +1334,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Lato bold";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     letter-spacing: 0.5px;
     color: #262D33;
@@ -1343,7 +1349,7 @@ body {
 .footer__addit-info {
     margin-top: 40px;
     font-family: "Lato regular";
-    font-size: 14px;
+    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
     line-height: 20px;
     color: #939699;
     display: flex;
