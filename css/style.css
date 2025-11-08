@@ -207,6 +207,7 @@ body {
     align-items: center;
     gap: 10px;
     border-bottom: 1px solid #D9DADB;
+    text-align: center;
 }
 
 .profile-text {
@@ -329,6 +330,9 @@ body {
     color: #FFFFFF;
 }
 
+.item-img {
+}
+
 .section-recommended {
     padding: 0 20px 0 20px;
     margin-top: 30px;
@@ -401,15 +405,21 @@ body {
 .readmore-button {
     align-self: center;
     max-height: 40px;
-    display: flex;
-    gap: 5px;
     background-color: #4592FF;
     border-radius: 20px;
     padding: 10px 20px 10px 25px;
     border: none;
 }
 
+.button-wrapper {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    gap: 5px;
+}
+
 .button-text {
+    text-wrap: nowrap;
     align-self: center;
     color: white;
     font-family:"Lato medium";
@@ -657,6 +667,7 @@ body {
 }
 
 .display-subtitle {
+    margin-top: 10px;
     font-family:"Lato light";
     color: #E7D9FF;
     text-transform: uppercase;
@@ -1273,16 +1284,17 @@ body {
     text-decoration: none;
     margin-top: 30px;
     font-family: "Lato bold";
-    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
+    font-size: clamp(0.4375rem, 0.3125rem + 0.625vw, 0.875rem);
     line-height: 20px;
     color: #262D33;
 }
 
 .equal-subtitle {
     text-decoration: none;
+    max-width: 70%;
     display: block;
     font-family: "Lato regular";
-    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
+    font-size: clamp(0.4375rem, 0.3125rem + 0.625vw, 0.875rem);
     line-height: 20px;
     color: #4B5157;
     margin-top: 15px;
@@ -1334,11 +1346,13 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Lato bold";
-    font-size: clamp(0.5625rem, 0.4583rem + 0.463vw, 0.875rem);
+    font-size: clamp(0.4375rem, 0.3125rem + 0.625vw, 0.875rem);
     line-height: 20px;
     letter-spacing: 0.5px;
     color: #262D33;
     align-self: center;
+    text-align: center;
+
 }
 
 .contacts-socialmedia {
@@ -1359,6 +1373,7 @@ body {
 .addit-info-text {
     max-width: 750px;
     text-align: start;
+    margin-right: 20px;
 }
 
 @media (max-width: 1060px) {
@@ -1394,5 +1409,203 @@ body {
 
     .burger-menu-title {
         display: block;
+    }
+}
+@media (max-width: 700px) {
+    .footer__contacts {
+        gap: 20px;
+    }
+
+    .news__grid {
+        grid-template-areas: 
+        "cars cars"
+        "cars cars"
+        "cats art"
+        "cats art"
+        "coffee manufacture"
+        "stress lemons";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 670px) {
+    .section-hot__grid {
+        grid-template-areas:
+        "photo photo"
+        "photo photo"
+        "careers careers"
+        "careers careers"
+        "coffee manufacture";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width:580px) {
+    .menu__subscribtion-ad{
+        display: none;
+    }
+
+    .menu__phrase {
+        display: none;
+    }
+
+    .menu__date {
+        border-top: 1px solid #D9DADB;
+    }
+
+    .menu__text {
+        border-top: none;
+    }
+
+    .header__menu {
+        padding-top: 5px;
+        grid-template-areas: 
+        "sections search . . sign"
+        "statue txt txt date weather"
+        ;
+    }
+
+    .contacts-socialmedia {
+        display: none;
+    }
+
+}
+
+@media (max-width: 525px) {
+    .item-img{
+        display: none;
+    }
+
+    .news__columns {
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px) {
+    
+    .grid__item {
+        padding: 10px 10px 15px 10px;
+    }
+
+    .recommended__detail {
+        padding: 25px 25px 50px 25px;
+    }
+
+    .readmore-button {
+        height: 30px;
+        width: 130px;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .random-article__button {
+        width: 80px;
+    }
+
+    .news__columns {
+        display: none;
+    }
+
+    .section-hot__grid {
+        grid-template-areas:
+        "photo photo"
+        "photo photo"
+        "careers careers"
+        "careers careers"
+        "coffee manufacture";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+
+    .general-button {
+        width: 90px;
+    }
+
+    .socialmedia-facebook, .socialmedia-instagram, .socialmedia-twitter, .socialmedia-youtube {
+        display: flex;
+        align-items: center;
+    }
+
+    .collection__top {
+        display: none;
+    }
+
+}    
+
+@media (max-width: 420px) {
+    .grid-block, .list-name {
+        padding: 5px 15px 5px 15px;
+    }
+
+    .recommended__detail {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .detail-author {
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .menu__weather {
+        display: none;
+    }
+
+    .header__menu {
+        padding: 5px 10px 0 10px;
+        padding-top: 5px;
+        grid-template-areas: 
+        "sections search . sign"
+        "statue txt txt date"
+        ;
+    }
+
+    .recomended__list {
+        display: none;
+    }
+
+    .recommended__detail {
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .readmore-button {
+        width: 100px;
+    }
+    
+}
+
+@media (max-width:350px) {
+    .news__grid {
+        grid-template-areas:
+        "cars"
+        "art"
+        "cats"
+        "coffee"
+        "manufacture"
+        "stress"
+        "lemons";
+    }
+
+    .cats-img {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__title {
+        text-align: center;
+    }
+
+    .section-hot__grid {
+        grid-template-areas:
+        "photo"
+        "careers"
+        "coffee"
+        "manufacture";
     }
 }
